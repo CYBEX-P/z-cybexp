@@ -1,0 +1,32 @@
+{% extends 'cybexpweb/base.html' %}
+
+{% block head_title %}
+ Welcome | Profile
+{% endblock %}
+
+
+{% block content %}
+
+<script>
+function myFunction() {
+    alert("Page is loaded");
+}
+</script>
+
+    <div class="container" onload="myFunction()">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+
+          <p>profile page</p>
+          <p id='content1'></p>
+        </div>
+      </div> <!-- End Row div -->
+
+      <hr>
+
+    </div> <!-- /container -->
+
+
+
+{% endblock %}

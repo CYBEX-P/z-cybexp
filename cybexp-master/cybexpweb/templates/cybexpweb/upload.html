@@ -1,0 +1,47 @@
+{% extends 'cybexpweb/base.html' %}
+
+{% block head_title %}
+  Welcome | Upload/Submit
+{% endblock %}
+
+
+
+
+
+
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-12">
+
+            <h3>This is Upload/Submit Page</h3>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Upload File</h2>
+            <form id="upload-form" enctype="multipart/form-data" >
+              	<label for="document">Document:</label>
+				<input type="file" name="file" id="document" /></br>
+				<label for="typtag">Type of file:</label>
+				<select name="typtag">
+				  <option value="iptables_log">IPTables Log</option>
+				</select></br>
+                <button type="submit" class="btn btn-default" onclick="fileUpload(event)" >Upload File &raquo;</button>
+            </form>
+          </div>
+
+        </div>
+
+
+          </div>
+        </div> <!-- End Row div -->
+
+        <hr>
+
+      </div> <!-- /container -->
+
+
+{% endblock %}

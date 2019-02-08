@@ -1,0 +1,31 @@
+{% extends 'cybexpweb/base.html' %} {% block head_title %} Welcome | Home
+{%endblock %} {% block content %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+
+<div id="Dashboard_Section">
+  <div id="Live_Data">
+    <span style="font-size:1.3em;text-align: center;padding-bottom: 1%">Live: Latest Alerts</span>
+    <div id="Live_Data_Dashboard_Titles">
+      <span>Description</span> <span>Severity</span>
+      <span>Origin IP</span>
+    </div>
+    <div id="Live_Data_Dashboard"></div>
+  </div>
+
+  <div id="Country_News">
+    <div id="Attacking_Countries">
+      <span id="Attacking_Countries_Title"
+        >Top 10 Attacking Countries: Related News</span
+      >
+      <div id="list-countries"></div>
+    </div>
+    <div id="News_Articles"><div id="para-articles"></div></div>
+  </div>
+</div>
+
+<!-- <script refer>getEventData();</script> -->
+<script>
+    getNews();
+  </script>
+<!-- /container -->
+{% endblock %}

@@ -1,0 +1,85 @@
+/* @media only screen and (max-width: 992px) {
+  #Reg_View_NavIcons {
+    display: none;
+  }
+
+  #login_logout_nav_btn {
+    display: none;
+  }
+
+  #Nav_Bar {
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #Nav_Bar_Inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9ecef
+  }
+
+  #Mobile_Menu_Button {
+    margin-right: 3vw;
+  }
+} */
+
+@media only screen and (min-width: 1200px) {
+}
+
+#Mobile_Menu_Button {
+  display: none;
+}
+
+#Mobile_Menu_Items {
+  display: none;
+}
+
+#Nav_Bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 2vh 20vh 0 0 */
+  border-bottom: 1px solid #e0e0e2;
+  height: 13vh;
+}
+
+#Nav_Bar_Inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+#Reg_View_NavIcons {
+  display: flex;
+}
+
+#Page_Title {
+  font-size: 2em;
+}
+
+#Side_Nav {
+  background-color: #e0e0e2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 16vw
+}
+
+#Side_Nav div {
+  padding-top: 3vh
+}
+
+#PageFooter {
+    display: flex;
+    justify-content: center
+}
+
+#PageFooter span {
+  font-size: .8em;
+  text-align: center
+}

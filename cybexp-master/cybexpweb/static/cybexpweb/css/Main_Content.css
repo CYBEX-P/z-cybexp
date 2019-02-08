@@ -1,0 +1,226 @@
+#para-articles::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+  padding-right: 10px;
+}
+#para-articles::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+#para-articles::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+#list-countries::-webkit-scrollbar {
+  background-color: #fff;
+  height: 16px;
+}
+#list-countries::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+#list-countries::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 6px solid #fff;
+}
+
+#Main_Content {
+  display: flex;
+  height: 87vh;
+}
+
+#Right_Side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1% 1% 0 1%;
+}
+
+#Dashboard_Section {
+  display: flex;
+  height: 100%;
+}
+
+#Country_News {
+  height: 80vh;
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#News_Articles {
+  height: 80%;
+  font-size: 0.8em;
+  border: 1px solid black;
+  border-radius: 2%;
+  padding: 0.5%;
+}
+
+#para-articles {
+  padding: 2%;
+  height: 100%;
+  overflow-y: scroll;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column
+}
+
+#Attacking_Countries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
+
+#Attacking_Countries span {
+  text-align: center;
+  width: 100%;
+}
+
+#Attacking_Countries_Title {
+  font-size: 1.2em;
+  text-decoration: underline
+}
+
+.News_Countries,
+.Selected_Country {
+  cursor: pointer;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 0.8em;
+}
+
+.News_Countries .Country_nameSpan,
+.Selected_Country .Country_nameSpan {
+  margin-left: 2px;
+}
+
+.Selected_Country .Country_nameSpan {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+#list-countries {
+  display: flex;
+  overflow-x: scroll;
+  padding-top: 2%;
+}
+
+.data-country_article {
+    padding-bottom: 2%
+}
+
+#Live_Data {
+  height: 80vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1%
+}
+
+#Live_Data_Dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-around;
+  border: 1px solid black;
+  background-color: rgba(0,123,255,.3);
+  border-radius: 2%;
+  font-size: .8em
+}
+
+#Live_Data_Dashboard_Titles {
+  display: flex;
+  height: 5vh;
+  justify-content: space-around
+}
+
+#Live_Data_Dashboard_Titles span {
+  width: 33%;
+  text-align: center
+}
+
+.Live_Data_Dashboard-Row {
+  border-top: 1px solid black;
+}
+
+.Live_Data_Dashboard-Row-One, .Live_Data_Dashboard-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Live_Data_Dashboard-Row span, .Live_Data_Dashboard-Row-One span {
+  width: 33%;
+  text-align: center
+}
+
+#databaseContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#databasePages {
+  display: flex;
+  margin-left: 2%
+}
+
+#databaseItems {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-around;
+  border: 1px solid black;
+  background-color: rgba(0,123,255,.3);
+  border-radius: 2%;
+  font-size: .8em
+}
+
+#databaseItems_Titles {
+  display: flex;
+  height: 5vh;
+  justify-content: space-around
+}
+
+#databaseItems_Titles span {
+  width: 33%;
+  text-align: center
+}
+
+.databaseItems-Row {
+  border-top: 1px solid black;
+}
+
+.databaseItems-Row-One, .databaseItems-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.databaseItems-Row span, .databaseItems-Row-One span {
+  width: 33%;
+  text-align: center
+}
+
+.database-page, .Selected_database-page {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.database-page {
+  background-color: #e0e0e2;
+}
+
+.Selected_database-page {
+  background-color: #212529;
+  color: #e0e0e2
+}

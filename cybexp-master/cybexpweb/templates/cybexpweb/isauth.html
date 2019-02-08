@@ -1,0 +1,36 @@
+{% extends 'cybexpweb/base.html' %}
+
+{% block head_title %}
+ Welcome | Home
+{% endblock %}
+
+
+
+
+
+
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Hello! {{request.user}}</h1>
+
+          <p>Stuff</p>
+          <p id='content1'></p>
+
+
+          <p><a class="btn btn-default" href="#" role="button" onClick="getData(event)">Get data &raquo;</a></p>
+
+          <p><a class="btn btn-default" href="#" role="button" onClick="getMongoData(event)">Get mongodara &raquo;</a></p>
+
+        </div>
+      </div> <!-- End Row div -->
+
+      <hr>
+
+    </div> <!-- /container -->
+
+{% endblock %}

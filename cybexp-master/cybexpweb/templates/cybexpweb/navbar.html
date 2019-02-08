@@ -1,0 +1,55 @@
+<nav id="Nav_Bar">
+  <div id="Nav_Bar_Inner">
+    <a id="Nevada_Logo" href="{% url 'index' %}"
+      ><img
+        style="height: 10vh"
+        src="https://www.unr.edu/Images/president/im/basic-logos/horizontal-logo-thumb.png"
+    /></a>
+    <span id="Page_Title">CYBEXP</span>
+    {% include 'cybexpweb/login.html' %}
+    <i
+      id="Mobile_Menu_Button"
+      data-feather="menu"
+      width="56"
+      height="56"
+      strokewidth="3"
+    ></i>
+    <div id="Reg_View_NavIcons">
+      <div>
+        <a class="nav-link" href="#"><i data-feather="bell"></i></a>
+      </div>
+      <div>
+        <a class="nav-link" href="{% url 'contactus' %}"
+          ><i data-feather="help-circle"></i
+        ></a>
+      </div>
+      <div>
+        <a class="nav-link" href="{% url 'profile' %}"
+          ><i data-feather="user"></i
+        ></a>
+      </div>
+      <div>
+        <button
+          type="button"
+          id="login_logout_nav_btn"
+          class="btn btn-primary navbar-btn"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="Mobile_Menu_Items">
+    <button
+      type="button"
+      id="login_logout_nav_btn"
+      class="btn btn-primary navbar-btn"
+      data-toggle="modal"
+      data-target="#loginModal"
+    >
+      Login
+    </button>
+  </div>
+</nav>

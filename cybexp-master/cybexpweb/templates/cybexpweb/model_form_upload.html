@@ -1,0 +1,17 @@
+{% extends 'cybexpweb/base.html' %}
+
+{% block content %}
+{% csrf_token %}
+<!-- br not a perm solution -->
+<br>
+<br>
+<br>
+<div class="col-md-12">
+  <form method="post" enctype="multipart/form-data" id="uploadForm">
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+
+  <p><a href="../">Return to home</a></p>
+</div>
+{% endblock %}
